@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.0)
+  - AFNetworking
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -25,6 +25,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
 
-PODFILE CHECKSUM: ed01b9f7cd7ec5f68c1507f70f6aeb8103ae98ee
+PODFILE CHECKSUM: ed41eb907278245b0ebb4dd9797336850910473a
 
 COCOAPODS: 1.5.3

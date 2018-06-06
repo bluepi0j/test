@@ -14,6 +14,9 @@
 		81E9DE1020C7722000CEE3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E9DE0F20C7722000CEE3A2 /* Assets.xcassets */; };
 		81E9DE1320C7722000CEE3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E9DE1120C7722000CEE3A2 /* LaunchScreen.storyboard */; };
 		81E9DE1620C7722000CEE3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E9DE1520C7722000CEE3A2 /* main.m */; };
+		81E9DE1F20C7830A00CEE3A2 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E9DE1E20C7830A00CEE3A2 /* Answer.m */; };
+		81E9DE2220C7831E00CEE3A2 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E9DE2120C7831E00CEE3A2 /* Topic.m */; };
+		81E9DE2520C78C3700CEE3A2 /* AnswerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E9DE2420C78C3700CEE3A2 /* AnswerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,12 @@
 		81E9DE1220C7722000CEE3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E9DE1420C7722000CEE3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81E9DE1520C7722000CEE3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81E9DE1D20C7830A00CEE3A2 /* Answer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		81E9DE1E20C7830A00CEE3A2 /* Answer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
+		81E9DE2020C7831E00CEE3A2 /* Topic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		81E9DE2120C7831E00CEE3A2 /* Topic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		81E9DE2320C78C3700CEE3A2 /* AnswerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnswerManager.h; sourceTree = "<group>"; };
+		81E9DE2420C78C3700CEE3A2 /* AnswerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnswerManager.m; sourceTree = "<group>"; };
 		8767DF857FEDBE39B161616D /* libPods-Challenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Challenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E4ADFF169E732DBBDB58BE /* Pods-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge/Pods-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		CECDCCA007CDCBCA046DBA0E /* Pods-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge/Pods-Challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +82,7 @@
 		81E9DE0520C7721E00CEE3A2 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				81E9DE1C20C77B4400CEE3A2 /* Model */,
 				81E9DE0620C7721E00CEE3A2 /* AppDelegate.h */,
 				81E9DE0720C7721E00CEE3A2 /* AppDelegate.m */,
 				81E9DE0920C7721E00CEE3A2 /* ViewController.h */,
@@ -84,6 +94,19 @@
 				81E9DE1520C7722000CEE3A2 /* main.m */,
 			);
 			path = Challenge;
+			sourceTree = "<group>";
+		};
+		81E9DE1C20C77B4400CEE3A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81E9DE1D20C7830A00CEE3A2 /* Answer.h */,
+				81E9DE1E20C7830A00CEE3A2 /* Answer.m */,
+				81E9DE2020C7831E00CEE3A2 /* Topic.h */,
+				81E9DE2120C7831E00CEE3A2 /* Topic.m */,
+				81E9DE2320C78C3700CEE3A2 /* AnswerManager.h */,
+				81E9DE2420C78C3700CEE3A2 /* AnswerManager.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C5BAD7A138C105D939979ED3 /* Pods */ = {
@@ -188,8 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E9DE0B20C7721E00CEE3A2 /* ViewController.m in Sources */,
+				81E9DE2520C78C3700CEE3A2 /* AnswerManager.m in Sources */,
 				81E9DE1620C7722000CEE3A2 /* main.m in Sources */,
 				81E9DE0820C7721E00CEE3A2 /* AppDelegate.m in Sources */,
+				81E9DE2220C7831E00CEE3A2 /* Topic.m in Sources */,
+				81E9DE1F20C7830A00CEE3A2 /* Answer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
