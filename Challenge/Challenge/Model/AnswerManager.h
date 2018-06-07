@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AnswerManager : NSObject
-
++ (instancetype)sharedManager;
+- (NSArray *)allTopics;
+- (void)requestApiWithURL:(NSString *)url success:(void (^)(void))success failure:(void (^)(NSError *))failure;
 @end

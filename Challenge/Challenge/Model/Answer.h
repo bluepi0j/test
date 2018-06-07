@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) NSString *abstractSource;
 @property (strong, nonatomic) NSString *abstractURL;
-@property (strong, nonatomic) NSString *Heading;
-@property (strong, nonatomic) NSMutableArray<Topic *> *Topics;
+@property (strong, nonatomic) NSString *heading;
+@property (strong, nonatomic) NSMutableArray<Topic *> *topics;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AnswerManager.h"
 
 @interface AppDelegate ()
 

@@ -10,4 +10,10 @@
 
 @implementation Answer
 
+- (NSMutableArray *)topics {
+    if(!_topics) {
+        _topics = [[NSMutableArray alloc]init];
+    }
+    return _topics;
+}
 @end

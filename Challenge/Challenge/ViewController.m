@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AnswerManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[AnswerManager sharedManager] requestApiWithURL:@"http://api.duckduckgo.com/?q=apple&format=json&pretty=1" success:^{
+        NSLog(@"%@", [[AnswerManager sharedManager] allTopics]);
+    } failure:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+//    NSLog(@"%@", topicsArray);
 }
 
 
