@@ -99,9 +99,8 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDn-ND-Q7y">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDn-ND-Q7y">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Back" id="Fka-oF-DW2">
                                         <connections>
@@ -113,8 +112,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cDn-ND-Q7y" firstAttribute="top" secondItem="8SK-nq-xJV" secondAttribute="top" id="8n5-aR-ahg"/>
+                            <constraint firstItem="cDn-ND-Q7y" firstAttribute="leading" secondItem="8SK-nq-xJV" secondAttribute="leading" id="FGD-3I-qxU"/>
                             <constraint firstItem="Ekw-kq-cjd" firstAttribute="top" secondItem="8SK-nq-xJV" secondAttribute="top" id="VvK-SB-5Cg"/>
                             <constraint firstItem="Ekw-kq-cjd" firstAttribute="bottom" secondItem="8SK-nq-xJV" secondAttribute="bottom" id="cIf-o3-EKw"/>
+                            <constraint firstItem="cDn-ND-Q7y" firstAttribute="trailing" secondItem="8SK-nq-xJV" secondAttribute="trailing" id="fCO-Sh-1xw"/>
                             <constraint firstItem="Ekw-kq-cjd" firstAttribute="trailing" secondItem="8SK-nq-xJV" secondAttribute="trailing" id="i4R-DK-A0U"/>
                             <constraint firstItem="Ekw-kq-cjd" firstAttribute="leading" secondItem="8SK-nq-xJV" secondAttribute="leading" id="pHv-om-rJE"/>
                         </constraints>
